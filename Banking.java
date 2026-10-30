@@ -60,7 +60,6 @@ public class Banking {
     static Account login() {
         System.out.print("Enter your account number: ");
         int id = sc.nextInt();
-        sc.nextLine(); // consume leftover newline
 
         System.out.print("Enter your password: ");
         String pass = sc.nextLine();
@@ -88,7 +87,6 @@ public class Banking {
             System.out.println("6. Exit");
             System.out.print("Make your choice (1-6): ");
             int choice = sc.nextInt();
-            sc.nextLine(); // consume leftover newline
 
             switch (choice) {
                 case 1: {
